@@ -1,28 +1,52 @@
-# AI-Learning 🚀
+# 🤖 AI-Learning
 
-子路的 AI 实战项目仓库（配合 Obsidian 学习驾驶舱使用）
+> **山东理工大学 2026 级人工智能专业 · 开学前冲刺仓库（2026.8）**
+> 从零构建 AI 知识体系：数学 → 机器学习 → 深度学习
 
-## 目录结构
+---
 
-| 文件夹 | 内容 | 对应冲刺计划 |
-|--------|------|--------------|
-| `01-python-scripts/` | 第 1 周：文件整理、爬虫、彩色游戏 | 8/9-8/15 |
-| `02-data-science/` | 第 2 周：numpy/pandas/matplotlib 练习 | 8/16-8/22 |
-| `03-ml-project/` | 第 3 周：房价预测主项目 | 8/23-8/29 |
-| `04-titanic/` | 第 4 周：Titanic 生存预测 | 8/30-9/4 |
+## 📦 项目清单
 
-## 环境
+### 1. 📁 文件批量整理器 — `01-python-scripts/organize_files.py`
+按扩展名自动归类文件（jpg → jpg/，pdf → pdf/，无扩展名 → others/）
+- 技术：`os` / `shutil`
+- 状态：✅ 已完成
 
-- Python 3.12.10（独立安装：`C:\Users\hzl\AppData\Local\Programs\Python\Python312`）
-- pip 清华源已配置
-- 库：numpy / pandas / matplotlib / scikit-learn / requests / beautifulsoup4 / jupyter
+### 2. 🌦️ 淄博天气爬虫 — `01-python-scripts/crawl_weather.py`
+实时抓取淄博 7 天天气，解析并输出今日天气/温度/风力
+- 技术：`requests` / `BeautifulSoup`（含 User-Agent 伪装、编码处理、超时保护）
+- 状态：✅ 已完成
 
-## 运行 Jupyter
+### 3. 🏠 房价预测（进行中）— `03-ml-project/house_price/`
+线性回归预测——AI 最小完整闭环（数据 → 模型 → 评估 → 可视化）
+- 技术：`numpy` / `sklearn` / `matplotlib`
+- 当前：v1 参考实现已跑通（diabetes 数据集单特征基线）
+- 待办：亲手实现 v2（多特征 + 完整评估）
 
-```bash
-# 在 VS Code 中打开本文件夹，新建 .ipynb 文件，选择 Python 3.12 内核
-# 或命令行：
-C:\Users\hzl\AppData\Local\Programs\Python\Python312\python.exe -m jupyter lab
+### 4. 📝 数据科学练习 — `02-data-science/`
+numpy / 矩阵 / 梯度直觉 / 无穷小 的学习练习与可视化
+
+---
+
+## 🛠️ 技术栈
+
+`Python` · `numpy` · `pandas` · `matplotlib` · `requests` · `BeautifulSoup` · `sklearn` · `Git/GitHub`
+
+---
+
+## 📚 学习路线
+
+```
+高数（同济八版 Ch1-4 预习）→ 线性代数 → 机器学习 → 深度学习 → LLM
 ```
 
-> ⚠️ 注意：终端里 `python` 指向 Hermes venv（3.11），跑本仓库代码务必用 Python 3.12 全路径。
+## 📅 进度
+
+- [x] Python 语法基础（变量/循环/函数/列表/字典/文件）
+- [x] 文件整理实战（独立完成 30 行脚本）
+- [x] 爬虫实战（独立完成，含 3 轮调试）
+- [x] Git/GitHub 全流程
+- [x] 矩阵乘法 / 梯度直觉
+- [ ] 数据三件套（numpy / pandas / matplotlib）
+- [ ] 房价预测 v2（亲手实现）
+- [ ] Titanic 入门赛
